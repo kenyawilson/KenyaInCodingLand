@@ -1,0 +1,298 @@
+body, html {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #A3C052;
+}
+
+.flex-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr;
+    justify-items: flex-end;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#access_nav {
+    color: #834b7c;
+}
+
+.navbar i {
+    color: #aaaaaa;
+}
+
+.navbar {
+    font-size: 16px;
+    display: none;
+}
+
+.with_nav .navbar {
+    display: block;
+}
+
+.grid-1 {
+    border-bottom: 2px solid pink;
+    border-right: 2px solid pink;
+    text-align: center;
+    box-shadow: 4px 4px 5px #888888;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;    
+}
+
+#logo {
+    width: 200px;
+    height: 150px;
+}
+
+.grid-1 p {
+
+    font-size: 1em; 
+    font-family: 'Courier New', Courier, monospace;
+    border: solid #aaaaaa thin;
+    box-shadow: 4px 4px 5px #888888;
+    min-width: 500px;
+    color: #4d1d49;
+}
+
+#self-portrait {
+    transition: all 1s;
+}
+
+#self-portrait:hover {
+    transform: scale(1.1);
+}
+
+.grid-2 {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.grid-2 .grid-item {
+    padding: 15px;
+}
+
+.button-rabbithole {
+    background-color:#f1dcdf;
+    text-decoration: none;
+    border-radius: 10px;
+    border-bottom: solid #4d1d49;
+    box-shadow: 4px 4px 5px #888888;
+    max-width: 500px;
+    font-size: 2em;
+    font-weight: bold; 
+    color:#4d1d49;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.button-rabbithole:hover {
+    background-color:#4d1d49;
+    color: #f1dcdf;
+    animation: swirl 3s;
+}
+
+@keyframes swirl {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(100deg);
+    }
+
+    30% {
+        transform: rotate(150deg)
+    }
+
+    40% {
+        transform: rotate(200deg);
+    }
+
+    60% {
+        transform: rotate(360deg);
+    }
+
+    70% {
+        tranform: rotate(0deg);
+    }
+
+    80% {
+        transform: rotate(100deg);
+    }
+
+    90% {
+        transform: rotate(200deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+    
+    100 {
+        tranform: rotate(0deg);
+    }
+}
+
+.grid-3 {
+    height: 80vh;
+    background-color: #4d1d49;
+    padding-top: 10vh;
+    text-align: center;
+}
+
+.grid-3 li {
+    list-style: none;
+}
+
+.grid-3 a {
+    color:#f1dcdf;
+    opacity: 0.5;
+    text-decoration: none;
+    font-size: 2em;
+    transition: all 1.6s;
+}
+
+.grid-3 a:hover {
+    color:#f1dcdf;
+    opacity: 100%;
+    text-decoration: underline;
+    transform: all 1s ease-in-out;
+}
+
+.grid-3 h2 {
+    color: #834b7c;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.grid-3 p {
+    font-size: 1em;
+    color: #f1dcdf;
+}
+
+sup {
+    font-size: 14px;
+}
+
+.footer-grid {
+    margin-left: 25px;
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    align-items: end;
+}
+
+
+@media screen and (max-width: 1060px) {
+    .grid-1 { 
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+ }
+
+    .grid-1 p {
+        font-size: 1.5rem;
+}
+
+    .grid-3 {
+        height: 40vh;
+        background-color: #4d1d49;
+        padding-top: 10vh;
+        text-align: center;
+}
+
+    .footer-grid {
+        margin-left: 25px;
+        display: grid;
+        grid-template-columns: 2fr auto;
+        align-items: end;
+    }
+
+}
+
+@media screen and (max-width: 560px) {
+    .grid-1 { 
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+ }
+
+    #logo {
+        width: 50vw;
+        height: 25vh;
+    }
+
+    .grid-1 p {
+        font-size: 1em;
+    }
+
+    #self-portrait {
+        position: relative;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .button-rabbithole {
+        background-color: #f1dcdf;
+        text-decoration: none;
+        border-radius: 5px;
+        border-bottom: solid #4d1d49;
+        box-shadow: 4px 4px 5px #888888;
+        max-width: 400px;
+        font-size: 1.5em;
+        font-weight: bold; 
+        color:#4d1d49;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .button-rabbithole:hover {
+        background-color:#4d1d49;
+        color: #f1dcdf;
+        animation: none;
+    }
+
+        .footer-grid {
+            margin-left: 25px;
+            display: grid;
+            grid-template-columns: 6fr 3fr;
+            align-items: end;
+        }
+}
+*/
+
+/* IPhone X in portrait & landscape
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3) {
+    .grid-1 { 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        overflow: scroll;
+ }
+
+    #logo {
+        height: 20vh;
+    }
+
+    .grid-1 p {
+        max-width: inherit;
+        max-height: inherit;        
+        font-size: 1rem;
+    }
+}
+*/
+
+
