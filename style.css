@@ -141,7 +141,7 @@ body {
 
 .footer-grid {
     color: white;
-    background-color: #FDBD01; 
+    background-color: #e3cd3b; 
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 6fr 1fr;
