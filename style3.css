@@ -58,6 +58,7 @@ p {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 8fr 1fr;
+    max-height: 100vh;
 }
 
 .footer-grid {
