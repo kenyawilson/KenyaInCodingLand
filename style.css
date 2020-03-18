@@ -2,7 +2,7 @@ body {
     margin: 0;
     width: 100%;
     height: 100%;
-    background-color: #A3C052 !important;
+    background-color:#91AA4A !important;
 }
 
 .navbar {
@@ -170,6 +170,7 @@ footer p {
     }
 }
 
+
 /* 
   ##Device = Most tablets
 */
@@ -195,8 +196,7 @@ footer p {
 
 /* 
   ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
+  ##Screen = B/w 1025px to 1280px*/
 
 @media (min-width: 1025px) and (max-width: 1280px) {
     
